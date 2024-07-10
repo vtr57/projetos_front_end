@@ -58,6 +58,7 @@ form .txt_field{
     transform: translateY(-50%);
     font-size: 16px;
     pointer-events: none;
+    transition: 0.1s;
 }
 
 .txt_field span::before{
@@ -105,7 +106,7 @@ form .txt_field{
 #submit:hover{
     background: #2691d9;
     color: #e9f4fb;
-    transition: .7s;
+    transition: .4s;
 }
 
 .signup_link{

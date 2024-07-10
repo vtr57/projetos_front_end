@@ -1,0 +1,64 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #e4e7e9;
+    margin: 0;
+}
+
+.icon-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    gap: 20px;
+    height: 100vh;
+}
+
+.icon {
+    width: 60px;
+    height: 60px;
+    background: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.icon svg {
+    width: 40px;
+    height: 40px;
+    fill: #333;
+    transition: fill 0.3s ease;
+}
+
+.icon:hover {
+    transform: scale(1.2);
+    box-shadow: 0 16px 16px rgba(0, 0, 0, 0.1);
+}
+
+
+.icon.facebook:hover svg {
+    fill: #3b5998;
+}
+
+.icon.x:hover svg {
+    fill: #1da1f2;
+}
+
+.icon.instagram:hover svg {
+    fill: #e1306c;
+}
+
+.icon.github:hover svg {
+    fill: #4078c0;
+}
+
+.icon.youtube:hover svg {
+    fill: #ff0000;
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="center">
+            <h1>Login</h1>
+            <form action="" method="post">
+                <div class="txt_field">
+                    <input type="text" name="text" required>
+                    <span></span>
+                    <label for="text">Usuário</label>
+                </div>
+                <div class="txt_field">
+                    <input type="password" name="password" required>
+                    <span></span>
+                    <label for="password">Senha</label>
+                </div>
+                <div class="pass"><p>Esqueceu a senha?</p></div>
+                <input type="submit" value="Login" name="submit" id="submit">
+                <div class="signup_link">
+                    Não é cadastrado? <a href="{{url 'login'}}">Cadastre-se</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

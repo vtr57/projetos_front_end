@@ -1,0 +1,61 @@
+body, ul, li, p{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    font-size: 1.2rem;
+    font-family: Arial;
+}
+
+a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+h1{
+    text-align: center;
+}
+
+img{
+    max-width: 100%;
+    width: 400px;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+}
+
+header{
+    background: #1d1e20;
+    display: flex;
+    flex: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+}
+
+.menu{
+    display: flex;
+}
+
+.menu li{
+    margin-left: 15px;
+}
+
+.menu li a {
+    display: block;
+    padding: 15px;
+}
+
+/* CSS FLEXBOX 1 */
+
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 200px;
+    /* align-content: center; */
+}
+
+.flex div{
+    margin: 5px 20px;
+}
+

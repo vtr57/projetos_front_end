@@ -1,0 +1,79 @@
+/* #405D72
+#758694
+#F7E7DC
+#f7f7ff */
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f7f7ff;
+}
+
+.top-menu {
+    background-color: #405D72;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0px;
+    overflow-x: auto;
+    white-space: nowrap;
+    z-index: 1000;
+    -ms-overflow-style: none;  /* Oculta a barra de rolagem no IE e Edge */
+    scrollbar-width: none;  /* Oculta a barra de rolagem no Firefox */
+    border-bottom: 1px solid #405D72;
+}
+
+.top-menu .home{
+    background-color: #758694;
+}
+
+.top-menu a:hover{
+    background-color: #F7E7DC;
+    color: #405D72;
+}
+  
+.top-menu a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+    margin: 0;
+}
+
+.side-bar {
+    height: 100%; /* Full-height: remove this if you want "auto" height */
+    width: 200px; /* Set the width of the sidebar */
+    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 1; /* Stay on top */
+    top: 46px; /* Stay at the top */
+    left: 0;
+    background-color: #758694; /* Black */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 20px;
+}
+
+.side-bar a{
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    display: block;
+}
+
+.side-bar a:hover{
+    background-color: #F7E7DC;
+    color: #405D72;
+}
+
+main {
+    margin-left: 250px; /* Same as the width of the sidebar */
+    margin-top: 70px;
+    margin-right: 300px;
+    padding: 0px 10px;
+}
+
+
+

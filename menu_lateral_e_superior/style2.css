@@ -11,7 +11,7 @@ a{
 
 header{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-content: center;
     /* border-bottom: 1px solid black; */
     background-color: #fffefb;
@@ -98,9 +98,19 @@ main{
     left: 400px;
     top: 150px;
     z-index: -1;
-    /* visibility: hidden; */
-
 }
+
+.menu_suspenso{
+    display: inline-block;
+    position: relative;
+    left: 280px;
+    height: 500px;
+    width: 1000px;
+    background-image: linear-gradient(to left, #1a6791 , #1f87be);
+    background-color: #1a6791;
+}
+
+
 
 
 

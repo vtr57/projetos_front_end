@@ -17,5 +17,6 @@ window.addEventListener("load", () => {
         console.log('click no botao')
         const content = document.getElementById('content');
         content.classList.toggle("content_on");
+        btn.style.backgroundColor = 'green';
     }
 });

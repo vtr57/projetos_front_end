@@ -14,7 +14,11 @@ input{
     width: 400px;
     border-radius: 10px;
     font-size: 30px;
-    
+
+}
+
+.input_green{
+    background-color: green;
 }
 
 input:hover{

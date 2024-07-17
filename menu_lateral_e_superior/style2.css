@@ -14,7 +14,7 @@ header{
     justify-content: space-around;
     align-content: center;
     /* border-bottom: 1px solid black; */
-    background-color: #fffefb;
+    background-color: #FFFFFF;
     height: 80px;
 }
 
@@ -53,9 +53,13 @@ menu{
     margin: 0;
     background-image: linear-gradient(to left, #1a6791 , #1f87be);
     height: 30px;
+    border-bottom: 2px solid #cfa10a;
+
 }
 
-menu a{
+menu input{
+    background-color: #00000000;
+    border: 0;
     color: #d2ba6c;
     padding: 0px 80px;
     margin: 0px 0px;
@@ -64,7 +68,7 @@ menu a{
     font-weight: bold;
 }
 
-menu a:hover{
+menu input:hover{
     color: #fffcef;
 }
 
@@ -74,7 +78,9 @@ menu a:hover{
     top: 110px;
     width: 250px;
     height: calc(100vh - 110px);
-    background-image: linear-gradient(to left, #1a6791 , #127eb8);
+    background-color: #E7E9EB;
+    border-right: 2px solid #cfa10a;
+    border-top: 2px solid #cfa10a;
 }
 
 nav{
@@ -84,7 +90,7 @@ nav{
 
 nav a{
     margin: 10px 50px;
-    color: white;
+    color: rgb(48, 48, 48);
     font-size: 18px;
 }
 
@@ -100,18 +106,42 @@ main{
     z-index: -1;
 }
 
-.menu_suspenso{
+.menu_suspenso_mec{
+    display: none;
+}
+
+.menu_suspenso_mec_on{
     display: inline-block;
     position: relative;
     left: 280px;
-    height: 500px;
-    width: 1000px;
+    height: 300px;
+    width: 500px;
     background-image: linear-gradient(to left, #1a6791 , #1f87be);
     background-color: #1a6791;
+    border-left: 2px solid #cfa10a;
+    border-bottom: 2px solid #cfa10a;
+    border-right: 2px solid #cfa10a;
+    border-radius: 5px;
 }
 
+.menu_suspenso_style{
+    display: flex;
+}
 
+.menu_suspenso_style .col1, .menu_suspenso_style .col2{
+    display: flex;
+    flex-direction: column;
+    margin: 10px 20px;
+}
 
+.menu_suspenso_style .col1 a, .menu_suspenso_style .col2 a{
+    color: white;
+    font-size: 18px;
+    margin: 10px 20px;
+}
 
+.menu_suspenso_style .col1 a:hover, .menu_suspenso_style .col2 a:hover{
+    color: #d2ba6c;
+}
 
 

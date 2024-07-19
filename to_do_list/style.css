@@ -1,0 +1,213 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica;
+    background-color: #F8F8F8;
+    padding-top: 30px;
+    position: relative;
+}
+
+/* MENU */
+
+menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    width: 300px;
+    height: calc(100vh - 20px);
+    border-radius: 15px;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    box-shadow: -10px 20px 20px #d4d4d4;
+}
+
+main{
+    position: fixed;
+    top: 10px;
+    left: 330px;
+    height: calc(100% - 20px);
+    width: calc(100% - 340px);
+    border-radius: 15px;
+    /* border: 1px solid #000; */
+    margin: 0;
+    padding: 0;
+    overflow-y: auto;
+}
+
+menu .down{
+    margin: 20px 20px;
+}
+
+menu .down .settings{
+    display: flex;
+    align-items: center;
+}
+
+menu .down .settings h4{
+    margin-left: 10px;
+}
+
+menu .down .logout{
+    display: flex;
+    align-items: center;
+}
+
+menu .down .logout h4{
+    margin-left: 10px;
+}
+
+menu .down .logout i{
+    rotate: 180deg;
+}
+
+.title-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title-menu h2{
+    margin-left: 10px;
+}
+
+.title-menu i{
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+.menu-tasks{
+    margin: 5px 20px;
+    border-radius: 5px;
+
+}
+
+.menu-tasks h3{
+    margin-left: 10px;
+}
+
+.options-tasks{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    margin: 0px 10px;
+    padding-right: 10px;
+    transition: 0.2s;
+}
+
+.options-tasks:hover{
+    background-color: #d4d4d4;
+}
+
+.option-tasks-name{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.options-tasks i, .options-tasks h4{
+    margin-left: 10px;
+}
+
+.option-notifications{
+    border-radius: 4px;
+    background-color: #d4d4d4;
+    height: 22px;
+    width: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+
+.option-tasks-name .icon-list-personal{
+    border-radius: 4px;
+    background-color: #FDF2B3;
+    height: 22px;
+    width: 22px;
+    margin-left: 5px;
+}
+
+.option-tasks-name .icon-list-work{
+    margin-left: 5px;
+    border-radius: 4px;
+    background-color: #D1EAED;
+    height: 22px;
+    width: 22px;
+}
+
+.option-tasks-name .icon-list-list1{
+    margin-left: 5px;
+    border-radius: 4px;
+    background-color: #FFDADA;
+    height: 22px;
+    width: 22px;
+}
+
+
+/* MAIN */
+
+main .conteiner{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+main .conteiner-post-it{
+    width: 300px;
+    height: 400px;
+    margin: 10px 10px;
+    border-radius: 10px;
+    /* border: 1px solid #000; */
+    background-color: #fdf2b3;
+    box-shadow: -10px 20px 30px #d4d4d49c;
+}
+
+.conteiner-post-it .title-post-it{
+    display: block;
+    position: relative;
+    margin: 5px 0;
+    height: 40px;
+    width: calc(100% - 20px);
+    left: 10px;
+    border: none;
+    font-size: 30px;
+    background-color: #00000000;
+    font-weight: bold;
+}
+
+.title-post-it:focus{
+    outline: none;
+}
+
+.conteiner-post-it textarea{
+    position: relative;
+    margin: 5px 0;
+    height: calc(100% - 65px);
+    width: calc(100% - 20px);
+    left: 10px;
+    border: none;
+    background-color: #00000000;
+    font-size: 16px;
+    resize: none;
+}
+
+textarea:focus{
+    outline: none;
+}
+
+#second{
+    background-color: #D1EAED;
+}
+
+#third{
+    background-color: #FFDADA;
+}
+
+#four{
+    background-color: #a3f8a0;
+}
+
+

@@ -6,49 +6,122 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="tasks-container">
-        <div id="tasks-header">
-            <h2>Salve a sua próxima tarefa:</h2>
-            <form action="" id="add-task-form">
-                <input type="text" id="task-title" placeholder="Add tasks">
-                <button type="submit" id="add-btn">
-                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30" viewBox="0 0 50 50">
-                        <path d="M 25 2 C 12.309295 2 2 12.309295 2 25 C 2 37.690705 12.309295 48 25 48 C 37.690705 48 48 37.690705 48 25 C 48 12.309295 37.690705 2 25 2 z M 25 4 C 36.609824 4 46 13.390176 46 25 C 46 36.609824 36.609824 46 25 46 C 13.390176 46 4 36.609824 4 25 C 4 13.390176 13.390176 4 25 4 z M 24 13 L 24 24 L 13 24 L 13 26 L 24 26 L 24 37 L 26 37 L 26 26 L 37 26 L 37 24 L 26 24 L 26 13 L 24 13 z"></path>
-                        </svg>
-                </button>
-            </form>
-        </div>
-        <div id="tasks-list-container">
-            <h2>Tarefas:</h2>
-            <ul id="task-list">
-                <li class="task-box">
-                    <span class="task-title">Teste</span>
-                    <svg class="done-btn" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30" viewBox="0 0 50 50">
-                        <path d="M 42.875 8.625 C 42.84375 8.632813 42.8125 8.644531 42.78125 8.65625 C 42.519531 8.722656 42.292969 8.890625 42.15625 9.125 L 21.71875 40.8125 L 7.65625 28.125 C 7.410156 27.8125 7 27.675781 6.613281 27.777344 C 6.226563 27.878906 5.941406 28.203125 5.882813 28.597656 C 5.824219 28.992188 6.003906 29.382813 6.34375 29.59375 L 21.25 43.09375 C 21.46875 43.285156 21.761719 43.371094 22.050781 43.328125 C 22.339844 43.285156 22.59375 43.121094 22.75 42.875 L 43.84375 10.1875 C 44.074219 9.859375 44.085938 9.425781 43.875 9.085938 C 43.664063 8.746094 43.269531 8.566406 42.875 8.625 Z"></path>
-                        </svg>
-                    <svg class="remove-btn" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30" viewBox="0 0 100 100">
-                        <defs><style>.cls-1{fill:none;stroke:#000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px;}</style></defs><title/><g id="minus"><line class="cls-1" x1="10" x2="90" y1="50" y2="50"/></g></svg>
-                </li>
-                <li class="task-box">
-                    <span class="task-title">Teste</span>
-                    <svg class="done-btn" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30" viewBox="0 0 50 50">
-                        <path d="M 42.875 8.625 C 42.84375 8.632813 42.8125 8.644531 42.78125 8.65625 C 42.519531 8.722656 42.292969 8.890625 42.15625 9.125 L 21.71875 40.8125 L 7.65625 28.125 C 7.410156 27.8125 7 27.675781 6.613281 27.777344 C 6.226563 27.878906 5.941406 28.203125 5.882813 28.597656 C 5.824219 28.992188 6.003906 29.382813 6.34375 29.59375 L 21.25 43.09375 C 21.46875 43.285156 21.761719 43.371094 22.050781 43.328125 C 22.339844 43.285156 22.59375 43.121094 22.75 42.875 L 43.84375 10.1875 C 44.074219 9.859375 44.085938 9.425781 43.875 9.085938 C 43.664063 8.746094 43.269531 8.566406 42.875 8.625 Z"></path>
-                        </svg>
-                    <svg class="remove-btn" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30" viewBox="0 0 100 100">
-                        <defs><style>.cls-1{fill:none;stroke:#000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px;}</style></defs><title/><g id="minus"><line class="cls-1" x1="10" x2="90" y1="50" y2="50"/></g></svg>
-                </li>
-                <li class="task-box">
-                    <span class="task-title">Teste</span>
-                    <svg class="done-btn" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30" viewBox="0 0 50 50">
-                        <path d="M 42.875 8.625 C 42.84375 8.632813 42.8125 8.644531 42.78125 8.65625 C 42.519531 8.722656 42.292969 8.890625 42.15625 9.125 L 21.71875 40.8125 L 7.65625 28.125 C 7.410156 27.8125 7 27.675781 6.613281 27.777344 C 6.226563 27.878906 5.941406 28.203125 5.882813 28.597656 C 5.824219 28.992188 6.003906 29.382813 6.34375 29.59375 L 21.25 43.09375 C 21.46875 43.285156 21.761719 43.371094 22.050781 43.328125 C 22.339844 43.285156 22.59375 43.121094 22.75 42.875 L 43.84375 10.1875 C 44.074219 9.859375 44.085938 9.425781 43.875 9.085938 C 43.664063 8.746094 43.269531 8.566406 42.875 8.625 Z"></path>
-                        </svg>
-                    <svg class="remove-btn" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30" viewBox="0 0 100 100">
-                        <defs><style>.cls-1{fill:none;stroke:#000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px;}</style></defs><title/><g id="minus"><line class="cls-1" x1="10" x2="90" y1="50" y2="50"/></g></svg>
-                </li>
+
+    <!-- MENU -->
+
+    <menu>
+        <div class="up">
+
+            <div class="title-menu">
+                <h2>Menu</h2>
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            
+            <div class="menu-tasks">
+                <h3>Tasks</h3>
+                <div class="options-tasks">
+                    <div class="option-tasks-name">
+                        <i class="fa-solid fa-angles-right"></i>
+                        <h4>Upcoming</h4>
+                    </div>
+                    <div class="option-notifications">4</div>
+                </div>
+                <div class="options-tasks">
+                    <div class="option-tasks-name">
+                        <i class="fa-solid fa-list-check"></i>
+                        <h4>Today</h4>
+                    </div>
+                    <div class="option-notifications">3</div>
+                </div>
+                <div class="options-tasks">
+                    <div class="option-tasks-name">
+                        <i class="fa-regular fa-calendar-days"></i>
+                        <h4>Calendar</h4>
+                    </div>
+                    <div class="option-notifications">10</div>
+                </div>
+                <div class="options-tasks">
+                    <div class="option-tasks-name">
+                        <i class="fa-solid fa-bookmark"></i>
+                        <h4>Stick Wall</h4>
+                    </div>
+                </div>
                 
-            </ul>
+            </div>
+            <div class="menu-tasks">
+                <h3>Lists</h3>
+                <div class="options-tasks">
+                    <div class="option-tasks-name">
+                        <span class="icon-list-personal"></span>
+                        <h4>Personal</h4>
+                    </div>
+                    <div class="option-notifications">4</div>
+                </div>
+                <div class="options-tasks">
+                    <div class="option-tasks-name">
+                        <span class="icon-list-work"></span>
+                        <h4>Work</h4>
+                    </div>
+                    <div class="option-notifications">3</div>
+                </div>
+                <div class="options-tasks">
+                    <div class="option-tasks-name">
+                        <span class="icon-list-list1"></span>
+                        <h4>List 1</h4>
+                    </div>
+                    <div class="option-notifications">10</div>
+                </div>
+                <div class="options-tasks">
+                    <div class="option-tasks-name">
+                        <i class="fa-solid fa-plus"></i>
+                        <h4>Add new List</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+            
+        <div class="down">
+            <div class="settings">
+                <i class="fa-solid fa-gear"></i>
+                <h4>Settings</h4>
+            </div>
+            <div class="logout">
+                <i class="fa-solid fa-right-from-bracket"></i>
+                <h4>Logout</h4>
+            </div>
         </div>
     </div>
+    </menu>
+
+    <!-- MAIN -->
+    
+    <main>
+        <h1>Stick Wall</h1>
+        <div class="conteiner">
+            <div class="conteiner-post-it">
+                <input type="text" class="title-post-it" value="Tasks">
+                <textarea class="content-post-it">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid unde, omnis temporibus soluta illum amet est dicta rerum. Perspiciatis illo repellendus, esse animi dolorem necessitatibus? Nemo doloremque exercitationem sint quas?</textarea>
+            </div>
+            <div class="conteiner-post-it" id="first">
+                <input type="text" class="title-post-it" value="Tasks">
+                <textarea class="content-post-it">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid unde, omnis temporibus soluta illum amet est dicta rerum. Perspiciatis illo repellendus, esse animi dolorem necessitatibus? Nemo doloremque exercitationem sint quas?</textarea>
+            </div>
+            <div class="conteiner-post-it" id="second">
+                <input type="text" class="title-post-it" value="Tasks">
+                <textarea class="content-post-it">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid unde, omnis temporibus soluta illum amet est dicta rerum. Perspiciatis illo repellendus, esse animi dolorem necessitatibus? Nemo doloremque exercitationem sint quas?</textarea>
+            </div>
+            <div class="conteiner-post-it" id="third">
+                <input type="text" class="title-post-it" value="Tasks">
+                <textarea class="content-post-it">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid unde, omnis temporibus soluta illum amet est dicta rerum. Perspiciatis illo repellendus, esse animi dolorem necessitatibus? Nemo doloremque exercitationem sint quas?</textarea>
+            </div>
+            <div class="conteiner-post-it" id="four">
+                <input type="text" class="title-post-it" value="Tasks">
+                <textarea class="content-post-it">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid unde, omnis temporibus soluta illum amet est dicta rerum. Perspiciatis illo repellendus, esse animi dolorem necessitatibus? Nemo doloremque exercitationem sint quas?</textarea>
+            </div>
+        </div>
+
+    </main>
     <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/4bcd5fd9f3.js" crossorigin="anonymous"></script>
 </body>
 </html>
